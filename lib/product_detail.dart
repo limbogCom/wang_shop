@@ -768,19 +768,32 @@ class _productDetailPageState extends State<productDetailPage> with SingleTicker
                 textColor: Colors.white,
                 minWidth: double.infinity,
                 height: 50,
-                child: Row(
+                child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Icon(Icons.phone,
-                      color: Colors.white,
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(Icons.phone,
+                          color: Colors.white,
+                        ),
+                        Text(
+                          " กรุณาติดต่อฝ่ายขาย",
+                          style: new TextStyle(
+                              fontSize: 15,
+                              fontWeight: FontWeight.bold
+                          ),
+                        ),
+                      ],
                     ),
                     Text(
-                      " กรุณาติดต่อฝ่ายขาย",
+                      "063-5252927",
                       style: new TextStyle(
-                          fontSize: 20,
+                          fontSize: 15,
                           fontWeight: FontWeight.bold
                       ),
                     ),
+
                   ],
                 ),
                 //onPressed: (){Navigator.pushReplacementNamed(context, '/Home');},
