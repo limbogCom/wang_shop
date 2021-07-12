@@ -340,9 +340,11 @@ class _productDetailPageState extends State<productDetailPage> with SingleTicker
                           //fontSize: 14,
                           //fontWeight: FontWeight.w700,
                           //color: Colors.black)),
-                          SfBarcodeGenerator(value:'${widget.product.productBarcode}',
-                            showValue : true
-                            ,textStyle: TextStyle(fontSize: 15),),
+                          Expanded(
+                            child: SfBarcodeGenerator(value:'${widget.product.productBarcode}',
+                              showValue : true
+                              ,textStyle: TextStyle(fontSize: 15),),
+                          )
                         ],
                       ),
                     ),
